@@ -20,8 +20,8 @@ function counterWithLet(){
     },i*1000);
   }
 }
-counterwithVar();
-counterWithLet();
+// counterwithVar();
+// counterWithLet();
 
 //const
 
@@ -37,13 +37,26 @@ obj={
 };
 console.log(obj);
 
-// destructuring
+// Array destructuring
 let arr = [1,2,3];
 let [a,b,c] =arr;
 console.log(a,b,c);
 //swap a,b
 [a,b] =[b,a];
 console.log(a,b,c);
+
+//rest operator for Array
+let firstArray = ['a','b','c','d'];
+let newArray = [...firstArray,'e','f'];
+console.log('FirstArray:',firstArray);
+console.log('newArray:',newArray);
+
+// rest operator for tuple
+let firstTuple :[number,string,boolean] =[544368,'Balajee',true];
+
+let [x,y,z]= firstTuple;
+console.log(x,y,z);
+
 // Write TypeScript code!
 const appDiv: HTMLElement = document.getElementById('app');
 appDiv.innerHTML = `<h1>TypeScript Starter</h1>`;
