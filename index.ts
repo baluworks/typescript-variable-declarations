@@ -51,11 +51,21 @@ let newArray = [...firstArray,'e','f'];
 console.log('FirstArray:',firstArray);
 console.log('newArray:',newArray);
 
+// Destructuring restof other elements 
+let [one,...others] = firstArray;
+console.log(`one: ${one}, others :${others}`);
+
+
 // rest operator for tuple
 let firstTuple :[number,string,boolean] =[544368,'Balajee',true];
 
 let [x,y,z]= firstTuple;
 console.log(x,y,z);
+
+//destructuring rest other tuples.
+let [first, ...next] = firstTuple;
+console.log("first",first);
+console.log("next",next)
 
 // Write TypeScript code!
 const appDiv: HTMLElement = document.getElementById('app');
